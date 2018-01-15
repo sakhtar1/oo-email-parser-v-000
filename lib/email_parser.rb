@@ -9,12 +9,6 @@ class EmailParser
   def initialize(emails)
     @emails = emails
   end
+  
 
-  def parse
-    array = []
-    array = @emails.split(/[,\s]/)
-    array = array.reject { |e| e == ""}
-    array.uniq!
-    array
-  end
 end
