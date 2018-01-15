@@ -13,7 +13,7 @@ class EmailParser
   def parse
     parse_email = []
     parse_email = @emails.split(/[,\s]/)
-    parse_email = parse_email.reject { |email| e == ""}
+    parse_email = parse_email.reject { |email| email == ""}
     parse_email.uniq!
     parse_email
   end
